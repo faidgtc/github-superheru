@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>page_in game</name>
+    <events>
+        <variable constant="0" name="Score" sid="766214346373955" static="0" type="number">0</variable>
+        <variable constant="0" name="Playtime" sid="299367619215617" static="0" type="number">0</variable>
+        <variable constant="0" name="randomatas" sid="940454632071043" static="0" type="number">0</variable>
+        <event-block sid="496078190522123">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="991026112526677" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="780381230621530" type="win_text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="621234074736190" type="Audio">
+                    <param id="0" name="Audio file">Courageous Superhero Superman Style Theme Stock Music Royalty Free [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="285855245721209">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="648099098247331" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="385293553942452" type="score_text">
+                    <param id="0" name="Text">&quot;Score : &quot; &amp;Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="416505839064629">
+            <conditions>
+                <condition id="2" name="Key is down" sid="541599336399531" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block disabled="1" sid="976492064799257">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="169591796439865" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="740451139492608" type="obstacle_jeep">
+                    <param id="0" name="X">obstacle_jeep.X-5</param>
+                </action>
+                <action id="-1" name="Set X" sid="983338483046943" type="obstacle_jet">
+                    <param id="0" name="X">obstacle_jet.X-5</param>
+                </action>
+                <action id="-1" name="Set X" sid="837495464410775" type="obstacle_cren">
+                    <param id="0" name="X">obstacle_cren.X-5</param>
+                </action>
+                <action id="-1" name="Set X" sid="190531067426207" type="obstacle_balon">
+                    <param id="0" name="X">obstacle_balon.X-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="516540253579523">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="419684075796578" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="376970380476718">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="411178638972548" type="karakter">
+                    <param id="0" name="Object">obstacle_jet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="446563591002549" type="System">
+                    <param id="0" name="Layout">Page_Game Over</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="518655848495200" type="System" />
+                <action id="0" name="Play" sid="709729416032173" type="Audio">
+                    <param id="0" name="Audio file">Game Show lose - Sound effect (HD) [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="178694849995748">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="980825497075694" type="karakter">
+                    <param id="0" name="Object">obstacle_jeep</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="782448727932300" type="System">
+                    <param id="0" name="Layout">Page_Game Over</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="604218812238232" type="System" />
+                <action id="0" name="Play" sid="713173003751284" type="Audio">
+                    <param id="0" name="Audio file">Game Show lose - Sound effect (HD) [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="607589970185097">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="263009432233253" type="karakter">
+                    <param id="0" name="Object">obstacle_cren</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="304406106598958" type="System">
+                    <param id="0" name="Layout">Page_Game Over</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="513711296463718" type="System" />
+                <action id="0" name="Play" sid="688703263986335" type="Audio">
+                    <param id="0" name="Audio file">Game Show lose - Sound effect (HD) [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="381826563264685">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="161511052867526" type="karakter">
+                    <param id="0" name="Object">obstacle_balon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="919765370551192" type="System">
+                    <param id="0" name="Layout">Page_Game Over</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="992705288114990" type="System" />
+                <action id="0" name="Play" sid="108349153947852" type="Audio">
+                    <param id="0" name="Audio file">Game Show lose - Sound effect (HD) [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="111511995091919">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="433576242232368" type="karakter">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action disabled="1" id="-15" name="Set visible" sid="463436546927530" type="win_text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="482343744914101" type="System">
+                    <param id="0" name="Time scale">0.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="354554434511259" type="System">
+                    <param id="0" name="Layout">Page_Victory</param>
+                </action>
+                <action id="0" name="Play" sid="410555241747138" type="Audio">
+                    <param id="0" name="Audio file">Victory Sound Effect [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="260252002190855">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="417812611020037" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="616917104880186" type="System">
+                    <param id="0" name="Object to create">obstacle_balon</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">random(30,125)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="964963964126549">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="908596812584291" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="178563116655860" type="System">
+                    <param id="0" name="Object to create">obstacle_jet</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">random(30,125)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="564846283280576">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="223539861353387" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">6.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="397359723347323" type="System">
+                    <param id="0" name="Object to create">obstacle_balon</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">random(30,125)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="639233958697987">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="932363148150873" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="604457562713881" type="System">
+                    <param id="0" name="Object to create">obstacle_jet</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">random(30,125)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="190917159924440">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="446426282372696" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="674383545963558" type="System">
+                    <param id="0" name="Object to create">obstacle_jeep</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">350</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="931612466825837">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="243606959516803" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="305303013935462" type="System">
+                    <param id="0" name="Object to create">obstacle_cren</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">350</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="731501732501595">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="389440701383784" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">6.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="615387272909214" type="System">
+                    <param id="0" name="Object to create">obstacle_jeep</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">350</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="819066743212094">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="724642913458035" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="957064965432792" type="System">
+                    <param id="0" name="Object to create">obstacle_cren</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(400,750)</param>
+                    <param id="3" name="Y">350</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="473128924504353">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="631282057569695" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">61</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="150094084245172" type="Sprite4">
+                    <param id="0" name="Speed">-100</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="857634504048785" type="karakter">
+                    <param id="0" name="Instance variable">winning</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622741342217360">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="392988246980423" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="967182826378782" type="karakter">
+                    <param id="0" name="Instance variable">winning</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="399222827089610" type="Function">
+                    <param id="0" name="Name">&quot;spawnatas&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="344618446626088" type="Function">
+                    <param id="0" name="Name">&quot;spawnbawah&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="162562987015177">
+            <conditions>
+                <condition id="0" name="On function" sid="597741365504637" type="Function">
+                    <param id="0" name="Name">&quot;spawnatas&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="117147458740442" type="System">
+                    <param id="0" name="Variable">randomatas</param>
+                    <param id="1" name="Value">round(random(0,1))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="803469248248007">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="909345733494524" type="System">
+                            <param id="0" name="First value">randomatas</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="282916688960790" type="System">
+                            <param id="0" name="Object to create">obstacle_balon</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">1100</param>
+                            <param id="3" name="Y">random(30,125)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="229894993591172">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="810094210839983" type="System">
+                            <param id="0" name="First value">randomatas</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="264995647400380" type="System">
+                            <param id="0" name="Object to create">obstacle_jet</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">1100</param>
+                            <param id="3" name="Y">random(30,125)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="754065620704105">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="772611615111357">
+            <conditions>
+                <condition id="0" name="On function" sid="930846027404476" type="Function">
+                    <param id="0" name="Name">&quot;spawnbawah&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="974492971426597" type="System">
+                    <param id="0" name="Variable">randomatas</param>
+                    <param id="1" name="Value">round(random(0,1))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="225435351090951">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="670778711679908" type="System">
+                            <param id="0" name="First value">randomatas</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="371985516315519" type="System">
+                            <param id="0" name="Object to create">obstacle_cren</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">1100</param>
+                            <param id="3" name="Y">350</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="872577662281940">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="239579277546142" type="System">
+                            <param id="0" name="First value">randomatas</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="864095290093493" type="System">
+                            <param id="0" name="Object to create">obstacle_jeep</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">1100</param>
+                            <param id="3" name="Y">370</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="536380995187791">
+            <conditions>
+                <condition id="2" name="Key is down" sid="848452891718190" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="136176167917278" type="karakter">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="500039693393178">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="635101764567058" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-19" name="Rotate counter-clockwise" sid="997835194969649" type="karakter">
+                            <param id="0" name="Degrees">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="317673223385459">
+            <conditions>
+                <condition id="-22" name="Else" sid="969104477902030" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="850854542840675" type="karakter">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="231344254965707">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="234251191336050" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="297590385921726" type="karakter">
+                            <param id="0" name="Degrees">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="743549635554765">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="579110644893022" type="karakter">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="418836513709859" type="karakter">
+                    <param id="0" name="Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="637846261059384">
+            <conditions>
+                <condition id="-22" name="Else" sid="242766774617364" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="274862975044491" type="karakter">
+                    <param id="0" name="Speed">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="604500612998940">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="241590335314436" type="karakter">
+                    <param id="0" name="Object">coinSementara</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="617085976625400" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="486505109051150" type="coinSementara" />
+                <action id="0" name="Play" sid="368207698131093" type="Audio">
+                    <param id="0" name="Audio file">Mario Coin - Free Sound Effect [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="577767173143672">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="855715520531190" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="689585808918038" type="System">
+                    <param id="0" name="Object to create">coinSementara</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">880</param>
+                    <param id="3" name="Y">random(150,325)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="537085317829444">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="193643820145811" type="karakter" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="449584370430011" type="System">
+                    <param id="0" name="Layout">Page_Game Over</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="823824201960976" type="System" />
+                <action id="0" name="Play" sid="951242021932561" type="Audio">
+                    <param id="0" name="Audio file">Game Show lose - Sound effect (HD) [TubeRipper.cc]</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="601739106644495">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="145966320403570">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

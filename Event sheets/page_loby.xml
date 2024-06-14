@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>page_loby</name>
+    <events>
+        <event-block sid="573702474795619">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="145631847616470" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button_Play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="454269334679999" type="System">
+                    <param id="0" name="Layout">Page_in Game</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="804187934433758">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="390126698455034" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">button_quit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="923708144549262" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="525053110259226">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="693588244547776" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">button_credit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="108321357034662" type="System">
+                    <param id="0" name="Layout">Page_Credit</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

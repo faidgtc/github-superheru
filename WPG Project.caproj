@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>WPG Project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bgrn" sid="876224550106541">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353145365442516" speed="5">
+                    <frame duration="1" hotspotX="0.500313" hotspotY="0.500556" original-source="D:\Deww\Bu tia\bgrn.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p" sid="891232377865738">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="473570746337805" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\p.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backgrnd" sid="120282257815121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="107042080317775" speed="5">
+                    <frame duration="1" hotspotX="0.500313" hotspotY="0.500556" original-source="D:\Deww\Bu tia\backgrnd.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p2" sid="203266185701662">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="792810837643056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\p.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WhatsAppImage20240425At202626_eb9733fe" sid="530051175930951">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="208489154611857" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\WhatsApp Image 2024-04-25 at 20.26.26_eb9733fe.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="karakter" sid="515480095705297">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="winning" sid="999045643834836" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="495765673963050">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="585751947977445">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518606714604262" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\pp.png">
+                        <collision-poly>
+                            <point x="0.345313" y="0.345313" />
+                            <point x="0.5" y="0.371094" />
+                            <point x="0.6375" y="0.3625" />
+                            <point x="0.714844" y="0.5" />
+                            <point x="0.575" y="0.575" />
+                            <point x="0.5" y="0.628906" />
+                            <point x="0.08125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obstacle_jeep" sid="213480802610139">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565520627162349" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\8.png">
+                        <collision-poly>
+                            <point x="0.349219" y="0.349219" />
+                            <point x="0.5" y="0.235156" />
+                            <point x="0.764844" y="0.235156" />
+                            <point x="0.972656" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.646875" />
+                            <point x="0.364062" y="0.635938" />
+                            <point x="0.059375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obstacle_helicopter" sid="140400635718469">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="348419462787414" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\1.png">
+                        <collision-poly>
+                            <point x="0.371094" y="0.371094" />
+                            <point x="0.5" y="0.378906" />
+                            <point x="0.625781" y="0.374219" />
+                            <point x="0.811719" y="0.5" />
+                            <point x="0.635938" y="0.635938" />
+                            <point x="0.5" y="0.675" />
+                            <point x="0.357031" y="0.642969" />
+                            <point x="0.2375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="632261111144184">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="obstacle_jet" sid="732174067266633">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368594822143898" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\2.png">
+                        <collision-poly>
+                            <point x="0.458594" y="0.458594" />
+                            <point x="0.525" y="0.475" />
+                            <point x="0.871875" y="0.5" />
+                            <point x="0.638281" y="0.638281" />
+                            <point x="0.5" y="0.635156" />
+                            <point x="0.417969" y="0.582031" />
+                            <point x="0.160156" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obstacle_cren" sid="141236720879523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875746986829380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\5.png">
+                        <collision-poly>
+                            <point x="0.0218755" y="0.229688" />
+                            <point x="0.978906" y="0.564062" />
+                            <point x="0.797656" y="0.775781" />
+                            <point x="0.50625" y="0.739063" />
+                            <point x="0.297656" y="0.761719" />
+                            <point x="0.320312" y="0.559375" />
+                            <point x="0.596875" y="0.546094" />
+                            <point x="0.0851565" y="0.306641" />
+                            <point x="0.0308598" y="0.336915" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obstacle_balon" sid="758699352093008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="333663611681560" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Deww\Bu tia\6.png">
+                        <collision-poly>
+                            <point x="0.259375" y="0.259375" />
+                            <point x="0.5" y="0.254687" />
+                            <point x="0.696875" y="0.303125" />
+                            <point x="0.915625" y="0.5" />
+                            <point x="0.5" y="0.753906" />
+                            <point x="0.286719" y="0.713281" />
+                            <point x="0.059375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="631443107708279">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526522912893448" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faid\OneDrive\Pictures\Saved Pictures\IMG-20240425-WA0046.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="382460035501256">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Sprite" sid="156437957314353">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855895503922651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500752" original-source="C:\Users\faid\OneDrive\Pictures\Screenshots\Screenshot 2024-05-15 091227.png">
+                        <collision-poly>
+                            <point x="0.382353" y="0.249624" />
+                            <point x="0.480882" y="0.329323" />
+                            <point x="0.591175" y="0.252632" />
+                            <point x="0.714706" y="0.399248" />
+                            <point x="0.497059" y="0.654135" />
+                            <point x="0.241177" y="0.392481" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="878398211997067">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765931112605753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faid\Downloads\WhatsApp Image 2024-05-29 at 20.40.29_3b592aa3.jpg">
+                        <collision-poly>
+                            <point x="0.66875" y="0.4625" />
+                            <point x="0.720313" y="0.446875" />
+                            <point x="0.742188" y="0.560938" />
+                            <point x="0.739453" y="0.703125" />
+                            <point x="0.739844" y="0.803126" />
+                            <point x="0.696875" y="0.817188" />
+                            <point x="0.646875" y="0.79375" />
+                            <point x="0.674219" y="0.732812" />
+                            <point x="0.657813" y="0.575" />
+                            <point x="0.677343" y="0.514063" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="980029624243976">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="646270539422577" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faid\Downloads\WhatsApp Image 2024-05-29 at 20.40.29_3b592aa3.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="218292919891660">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="648587626796338">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="397468945051485" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faid\Downloads\Untitled70_20240529204538.png">
+                        <collision-poly>
+                            <point x="0.639844" y="0.577344" />
+                            <point x="0.660156" y="0.742968" />
+                            <point x="0.632813" y="0.804296" />
+                            <point x="0.746094" y="0.823437" />
+                            <point x="0.744531" y="0.727344" />
+                            <point x="0.739062" y="0.460938" />
+                            <point x="0.695312" y="0.429688" />
+                            <point x="0.65625" y="0.475" />
+                            <point x="0.664453" y="0.510547" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="win_text" sid="573868226482790">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="coinSementara" sid="475363781192053">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="134080491403602">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="469458270105030" speed="5">
+                    <frame duration="1" hotspotX="0.501953" hotspotY="0.501953" original-source="C:\Users\faid\Downloads\dollar_9382196.png">
+                        <collision-poly>
+                            <point x="0.18942" y="0" />
+                            <point x="0.394198" y="0" />
+                            <point x="0.543443" y="0" />
+                            <point x="0.614335" y="0" />
+                            <point x="0.81826" y="0" />
+                            <point x="0.967577" y="0.185103" />
+                            <point x="1" y="0.949109" />
+                            <point x="0.506826" y="1" />
+                            <point x="0.0078125" y="0.885189" />
+                            <point x="0.0392491" y="0.141663" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="score_text" sid="833027175095463">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite5" sid="986740516532806">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735183821743961" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faid\Downloads\20240529_210556.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="764465985721502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="796053795496465" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faid\Downloads\20240529_214003.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="822447516221008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647642591719742" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faid\Downloads\20240529_214020.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="335543890668006">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192595284298241" speed="5">
+                    <frame duration="1" hotspotX="0.500313" hotspotY="0.500556" original-source="C:\Users\faid\Downloads\WhatsApp Image 2024-05-30 at 19.13.29_a9ffccb3.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="756148439160509">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401488479079078" speed="5">
+                    <frame duration="1" hotspotX="0.500313" hotspotY="0.500556" original-source="C:\Users\faid\Downloads\WhatsApp Image 2024-05-30 at 19.47.47_bc8fe4fa.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="557840600286609">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195980531595875" speed="5">
+                    <frame duration="1" hotspotX="0.500313" hotspotY="0.500556" original-source="C:\Users\faid\Downloads\WhatsApp Image 2024-05-30 at 19.59.39_9a001c41.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="893603738553266">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817639674917532" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="221220300942335">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Button_Play" sid="975035277791535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608815653375294" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_retry" sid="161351586304891">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487331129517382" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_loby" sid="399954874128171">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518654941371748" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button_Previous" sid="196911128322637">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566947599199179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_quit" sid="200843442807757">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="858562032578675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="940558609862432">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Audio" sid="922123605560731">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite13" sid="961968828985544">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627192655770112" speed="5">
+                    <frame duration="1" hotspotX="0.500313" hotspotY="0.500556" original-source="C:\Users\faid\Downloads\WhatsApp Image 2024-05-30 at 23.25.45_8cd130b2.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_credit" sid="689227502997954">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="123642473411299" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_lobyy" sid="567624987155851">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button" sid="214412671043703">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="gotoloby" sid="979505002962845">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731764653268422" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="779689692056414">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="166047885509729">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="obstackle" plugin-id="Sprite" sid="123378444057736">
+            <members>
+                <member>obstacle_balon</member>
+                <member>obstacle_cren</member>
+                <member>obstacle_helicopter</member>
+                <member>obstacle_jeep</member>
+                <member>obstacle_jet</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Bullet" sid="757095711603974">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Page_in Game.xml</layout>
+        <layout>Page_Loby.xml</layout>
+        <layout>Page_Game Over.xml</layout>
+        <layout>Page_Victory.xml</layout>
+        <layout>Page_Credit.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>page_in game.xml</event-sheet>
+        <event-sheet>page_loby.xml</event-sheet>
+        <event-sheet>page_game over.xml</event-sheet>
+        <event-sheet>page_victory.xml</event-sheet>
+        <event-sheet>page_credit.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+        <global-instance type="Function" uid="9" />
+        <global-instance type="Mouse" uid="4" />
+        <global-instance type="Browser" uid="23" />
+        <global-instance type="Audio" uid="25">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Mario Coin - Free Sound Effect [TubeRipper.cc].ogg" />
+        <file name="Victory Sound Effect [TubeRipper.cc].ogg" />
+        <file name="Game Show lose - Sound effect (HD) [TubeRipper.cc].ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Courageous Superhero Superman Style Theme Stock Music Royalty Free [TubeRipper.cc].ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

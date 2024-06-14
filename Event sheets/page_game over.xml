@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>page_game over</name>
+    <events>
+        <event-block sid="954951764989503">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="195271737591239" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">button_loby</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="856487548847234" type="System">
+                    <param id="0" name="Layout">Page_Loby</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="617230512498228">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="161675507149723" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button_retry</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="718607560247519" type="System">
+                    <param id="0" name="Layout">Page_in Game</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
